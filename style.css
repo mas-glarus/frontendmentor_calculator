@@ -58,3 +58,175 @@ body {
     font-family: 'League Spartan', sans-serif;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--theme1-main-bg);
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    width: 50%;
+    margin: 10rem auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme {
+    display: flex;
+}
+
+.amount {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--theme1-screen-bg);
+    padding: 1.5rem 2rem 1.5rem 0;
+    border-radius: 1rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.theme1 {
+    background-color: var(--theme1-main-bg);
+    color: white;
+}
+
+.theme2 {
+    background-color: var(--theme2-main-bg);
+}
+
+.theme3 {
+    background-color: var(--theme3-main-bg);
+}
+
+.keyboard {
+    background-color: var(--theme1-keypad-bg);
+    border-radius: 1rem;
+}
+
+.buttons {
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    grid-template-areas: 
+    "seven eight nine delete"
+    "four five six add"
+    "one two three substract"
+    "point zero divide multiply"
+    "reset reset result result"
+    ;
+}
+
+.buttons button {
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    border: none;
+}
+
+.delete,
+.reset {
+    background-color: var(--theme1-key-bg-blue);
+    color: var(--text-white);
+    font-size: 2rem;
+    box-shadow: 0rem .3rem var(--theme1-key-shadow-blue);
+}
+
+.result {
+    background-color: var(--theme1-key-bg-red);
+    color: var(--text-white);
+    font-size: 2rem;
+    box-shadow: 0rem .3rem var(--theme1-key-shadow-red);
+}
+
+.num {
+    background-color: var(--theme1-key-bg-grey);
+    font-size: 3rem;
+    color: var(--theme1-text);
+    box-shadow: 0rem .3rem var(--theme1-key-shadow-grey);
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.point {
+    grid-area: point;
+}
+
+.delete {
+    grid-area: delete;
+}
+
+.add {
+    grid-area: add;
+}
+
+.substract {
+    grid-area: substract;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.result {
+    grid-area: result;
+}
+
+.reset {
+    grid-area: reset;
+}
