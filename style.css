@@ -80,6 +80,17 @@ header {
     display: flex;
 }
 
+h2 {
+    margin: 0;
+}
+
+.placeholder-theme1,
+.placeholder-theme2,
+.placeholder-theme3 {
+    margin-left: 1rem;
+    border-radius: 1rem;
+}
+
 .amount {
     margin: 2rem 0;
     display: flex;
@@ -229,4 +240,11 @@ h3 {
 
 .reset {
     grid-area: reset;
+}
+
+@media (max-width: 560px) {
+    .container {
+    width: 90%;
+        margin: 10rem auto;
+    }
 }
