@@ -60,8 +60,8 @@ body {
 }
 
 body {
-    background-color: var(--theme1-main-bg);
-    color: white;
+    background-color: var(--theme2-main-bg);
+    color: var(--theme2-text);
 }
 
 .container {
@@ -78,10 +78,16 @@ header {
 
 .theme {
     display: flex;
+    align-items: center;
 }
 
 h2 {
     margin: 0;
+}
+
+.placeholder-theme2 {
+    background-color: var(--theme2-key-bg-orange);
+    color: var(--text-white);
 }
 
 .placeholder-theme1,
@@ -89,39 +95,30 @@ h2 {
 .placeholder-theme3 {
     margin-left: 1rem;
     border-radius: 1rem;
+    padding: .5rem 1rem;
+    border: none;
 }
 
-.amount {
-    margin: 2rem 0;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--theme1-screen-bg);
-    padding: 1.5rem 2rem 1.5rem 0;
-    border-radius: 1rem;
-}
 
 h3 {
     margin: 0;
     font-size: 4rem;
 }
 
-.theme1 {
-    background-color: var(--theme1-main-bg);
-    color: white;
-}
-
-.theme2 {
-    background-color: var(--theme2-main-bg);
-}
-
-.theme3 {
-    background-color: var(--theme3-main-bg);
+.amount {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--theme2-screen-bg);
+    padding: 1.5rem 2rem 1.5rem 0;
+    border-radius: 1rem;
 }
 
 .keyboard {
-    background-color: var(--theme1-keypad-bg);
+    background-color: var(--theme2-keypad-bg);
     border-radius: 1rem;
 }
+
 
 .buttons {
     margin: 0 auto;
@@ -150,17 +147,17 @@ h3 {
 
 .delete,
 .reset {
-    background-color: var(--theme1-key-bg-blue);
+    background-color: var(--theme2-key-bg-cyan);
     color: var(--text-white);
     font-size: 2rem;
-    box-shadow: 0rem .3rem var(--theme1-key-shadow-blue);
+    box-shadow: 0rem .3rem var(--theme2-key-shadow-cyan);
 }
 
 .result {
-    background-color: var(--theme1-key-bg-red);
+    background-color: var(--theme2-key-bg-orange);
     color: var(--text-white);
     font-size: 2rem;
-    box-shadow: 0rem .3rem var(--theme1-key-shadow-red);
+    box-shadow: 0rem .3rem var(--theme2-key-shadow-orange);
 }
 
 .num {

@@ -1,0 +1,251 @@
+:root {
+    --text-white: hsl(0, 0%, 100%);
+
+/*theme 1:*/
+    --theme1-main-bg: hsl(222, 26%, 31%);
+    --theme1-keypad-bg: hsl(223, 31%, 20%);
+    --theme1-screen-bg: hsl(224, 36%, 15%);
+
+    --theme1-key-bg-blue: hsl(225, 21%, 49%);
+    --theme1-key-shadow-blue: hsl(224, 28%, 35%);
+
+    --theme1-key-bg-red: hsl(6, 63%, 50%);
+    --theme1-key-shadow-red: hsl(6, 70%, 34%);
+
+    --theme1-key-bg-grey: hsl(30, 25%, 89%);
+    --theme1-key-shadow-grey: hsl(28, 16%, 65%);
+
+    --theme1-text: hsl(221, 14%, 31%);
+
+/*theme 2:*/
+    --theme2-main-bg: hsl(0, 0%, 90%);
+    --theme2-keypad-bg: hsl(0, 5%, 81%);
+    --theme2-screen-bg: hsl(0, 0%, 93%);
+
+    --theme2-key-bg-cyan: hsl(185, 42%, 37%);
+    --theme2-key-shadow-cyan: hsl(185, 58%, 25%);
+
+    --theme2-key-bg-orange: hsl(25, 98%, 40%);
+    --theme2-key-shadow-orange: hsl(25, 99%, 27%);
+
+    --theme2-key-bg-gray: hsl(45, 7%, 89%);
+    --theme2-key-shadow-gray: hsl(35, 11%, 61%);
+
+    --theme2-text: hsl(60, 10%, 19%);
+
+/*theme 3:*/
+    --theme3-main-bg: hsl(268, 75%, 9%);
+    --theme3-keypad-screen-bg: hsl(268, 71%, 12%);
+
+    --theme3-key-bg-violet: hsl(281, 89%, 26%);
+    --theme3-key-shadow-magenta: hsl(285, 91%, 52%);
+
+    --theme3-key-bg-cyan: hsl(176, 100%, 44%);
+    --theme3-key-shadow-cyan: hsl(177, 92%, 70%);
+
+    --theme3-key-bg-dark-violet: hsl(268, 47%, 21%);
+    --theme3-key-shadow-dark-magenta: hsl(290, 70%, 36%);
+
+    --theme3-text-yellow: hsl(52, 100%, 62%);
+    --theme3-text-blue: hsl(198, 20%, 13%);
+}
+
+html,
+body {
+    font-size: 16px;
+    font-weight: 700;
+    margin:0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--theme1-main-bg);
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    width: 50%;
+    margin: 10rem auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    margin: 0;
+}
+
+.placeholder-theme1 {
+    background-color: var(--theme1-key-bg-red);
+    color: var(--text-white);
+}
+
+.placeholder-theme1,
+.placeholder-theme2,
+.placeholder-theme3 {
+    margin-left: 1rem;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    border: none;
+}
+
+.amount {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--theme1-screen-bg);
+    padding: 1.5rem 2rem 1.5rem 0;
+    border-radius: 1rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+.theme1 {
+    background-color: var(--theme1-main-bg);
+    color: white;
+}
+
+
+.keyboard {
+    background-color: var(--theme1-keypad-bg);
+    border-radius: 1rem;
+}
+
+.buttons {
+    margin: 0 auto;
+    padding: 2rem 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2rem;
+    grid-template-areas: 
+    "seven eight nine delete"
+    "four five six add"
+    "one two three substract"
+    "point zero divide multiply"
+    "reset reset result result"
+    ;
+}
+
+.buttons button {
+    font-family: 'League Spartan', sans-serif;
+    border-radius: 1rem;
+    padding: 1rem 0;
+    font-weight: 700;
+    border: none;
+}
+
+.delete,
+.reset {
+    background-color: var(--theme1-key-bg-blue);
+    color: var(--text-white);
+    font-size: 2rem;
+    box-shadow: 0rem .3rem var(--theme1-key-shadow-blue);
+}
+
+.result {
+    background-color: var(--theme1-key-bg-red);
+    color: var(--text-white);
+    font-size: 2rem;
+    box-shadow: 0rem .3rem var(--theme1-key-shadow-red);
+}
+
+.num {
+    background-color: var(--theme1-key-bg-grey);
+    font-size: 3rem;
+    color: var(--theme1-text);
+    box-shadow: 0rem .3rem var(--theme1-key-shadow-grey);
+}
+
+.zero {
+    grid-area: zero;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.point {
+    grid-area: point;
+}
+
+.delete {
+    grid-area: delete;
+}
+
+.add {
+    grid-area: add;
+}
+
+.substract {
+    grid-area: substract;
+}
+
+.multiply {
+    grid-area: multiply;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.result {
+    grid-area: result;
+}
+
+.reset {
+    grid-area: reset;
+}
+
+@media (max-width: 560px) {
+    .container {
+    width: 90%;
+        margin: 10rem auto;
+    }
+}
