@@ -1,0 +1,60 @@
+:root {
+    --text-white: hsl(0, 0%, 100%);
+
+/*theme 1:*/
+    --theme1-main-bg: hsl(222, 26%, 31%);
+    --theme1-keypad-bg: hsl(223, 31%, 20%);
+    --theme1-screen-bg: hsl(224, 36%, 15%);
+
+    --theme1-key-bg-blue: hsl(225, 21%, 49%);
+    --theme1-key-shadow-blue: hsl(224, 28%, 35%);
+
+    --theme1-key-bg-red: hsl(6, 63%, 50%);
+    --theme1-key-shadow-red: hsl(6, 70%, 34%);
+
+    --theme1-key-bg-grey: hsl(30, 25%, 89%);
+    --theme1-key-shadow-grey: hsl(28, 16%, 65%);
+
+    --theme1-text: hsl(221, 14%, 31%);
+
+/*theme 2:*/
+    --theme2-main-bg: hsl(0, 0%, 90%);
+    --theme2-keypad-bg: hsl(0, 5%, 81%);
+    --theme2-screen-bg: hsl(0, 0%, 93%);
+
+    --theme2-key-bg-cyan: hsl(185, 42%, 37%);
+    --theme2-key-shadow-cyan: hsl(185, 58%, 25%);
+
+    --theme2-key-bg-orange: hsl(25, 98%, 40%);
+    --theme2-key-shadow-orange: hsl(25, 99%, 27%);
+
+    --theme2-key-bg-gray: hsl(45, 7%, 89%);
+    --theme2-key-shadow-gray: hsl(35, 11%, 61%);
+
+    --theme2-text: hsl(60, 10%, 19%);
+
+/*theme 3:*/
+    --theme3-main-bg: hsl(268, 75%, 9%);
+    --theme3-keypad-screen-bg: hsl(268, 71%, 12%);
+
+    --theme3-key-bg-violet: hsl(281, 89%, 26%);
+    --theme3-key-shadow-magenta: hsl(285, 91%, 52%);
+
+    --theme3-key-bg-cyan: hsl(176, 100%, 44%);
+    --theme3-key-shadow-cyan: hsl(177, 92%, 70%);
+
+    --theme3-key-bg-dark-violet: hsl(268, 47%, 21%);
+    --theme3-key-shadow-dark-magenta: hsl(290, 70%, 36%);
+
+    --theme3-text-yellow: hsl(52, 100%, 62%);
+    --theme3-text-blue: hsl(198, 20%, 13%);
+}
+
+html,
+body {
+    font-size: 16px;
+    font-weight: 700;
+    margin:0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
